@@ -1,0 +1,149 @@
+
+#creating local repo
+git config --global user.email "kc@gmail.com"
+git config --global user.name "kameswari chebrolu"
+
+mkdir git-demo
+cd git-demo
+git init
+#should see .git folder, which is where the repo sits
+ls -a
+#explore the .git folder to see what is inside
+ls -a .git/
+
+#add files and check status
+# create file1.txt
+echo "v1" > file1.txt 
+# create file2.txt
+echo "v1" > file2.txt 
+# stage file1.txt
+git add file1.txt
+# show the state of git, no commits yet
+git status 
+
+#commit, log, show
+git commit -m "first commit: file1.txt v1"
+git status
+git log
+echo "v2" > file1.txt
+echo "v1" > file3.txt
+git add file2.txt
+git commit -m "second commit: file2 v1 is commited, file3 not committed"
+git status
+git log
+git show HEAD:file1.txt
+git show HEAD:file2.txt
+git show HEAD:file3.txt
+#notice the diff between -m and -am; since file1 was added at some point in the past, it is auto-commited along with file2 which is added now. 
+git commit -am "third commit: file1 v2 is commited, so is file2 v1, file3 still not committed"
+git status
+git log
+git show HEAD:file1.txt
+git show HEAD:file2.txt
+git show HEAD:file3.txt
+
+
+#Example that covers what is in the table in slides (21/22)
+mkdir git-another-demo
+cd git-another-demo
+git init
+echo "v1" > file1
+git add file1
+cat file1
+git show :file1
+git commit -m "file1 v1 committed"
+cat file1
+git show HEAD:file1
+git show :file1
+echo "v2" > file1
+cat file1
+git show HEAD:file1
+git show :file1
+git add file1
+cat file1
+git show HEAD:file1
+git show :file1
+echo "v3" > file1
+cat file1
+git show HEAD:file1
+git show :file1
+git commit -m "file1 in staging at v2 committed"
+git commit -am "file1 in working moved to staging as wll as committed , all v3"
+#Above command can also be replaced by git commit file1 -m "msg"
+
+#git diff, go to git-demo folder, remember: file1:v2, rest at version1. file1/2 are committed
+echo "v3" > file1
+git diff HEAD
+cat file1
+git show HEAD:file1
+git diff --cached HEAD
+git show :file1
+git show HEAD:file1
+
+#git checkout; remember file1:v3 in working but what is committed is file1:v2
+#3 commits
+git log 
+#note commit id has to be replaced by what is in your machine, my firsy commit id is ending in 4a73d; will warn that file1:v3 will be overwritten
+git checkout 4a73d
+echo "v2" > file2
+git commit -am "fourth commit where file1:v3, file:v2"
+git checkout 4a73d
+#should show file1:v1, and no file2; HEAD is pointing to first commit, while master is at the latest commit
+cat file1
+cat file2
+#go back to the latest
+git checkout master
+#want file1:v1 while file2 stays at v2
+git checkout cc40aec file1
+git commit -am "fifth commit, file1:v1; file2:v2"
+
+#git branch,switch
+#lets go back to the master first, file1:v3, rest are at v1
+git checkout master
+git branch
+git switch -c newbranch
+echo "v4" > file1
+git commit -am "file1:v4, rest at v1"
+git log
+git status
+git checkout master
+cat file1
+git status
+git checkout newbranch
+cat file1
+git status
+
+#git merge
+git checkout master
+#will not result in conflict, it will just update file1 to v4 since master has not seen any new changes post branching
+git merge -m "merging" newbranch
+
+#lets introduce conflict
+git checkout master
+echo "v5" > file1
+git commit -am "mainbranch file1:v5"
+cat file1
+
+git checkout newbranch
+echo "v6" > file1
+#adding a new file also
+echo "v1" > file4
+git add file4
+git commit -am " In newbranch: file1:v6, new file4 also present"
+
+git chekout master
+#git will fail due to conflict
+git merge -m "merging" newbranch
+#fix conflict
+git checkout newbranch file1
+#at lastest v6
+cat file1
+git commit -am "main file1:v6"
+git merge -m "merging" newbranch
+#notice file4 has come to main branch
+ls
+
+
+
+
+

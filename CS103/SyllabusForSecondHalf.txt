@@ -1,0 +1,29 @@
+Prof. Milind Sohoni's lectures: You should be able to understand and explain the differences (with examples) for science vs. engineering, vernacular vs. frontier science. You should be able to analyze a given societal problem and formulate it as a scientific problem, like the case studies shown to you. You are not expected to memorize any of the given case studies, but only understand the analysis methodology from them.
+
+Prof. Kameswari's lecture: You should be able to give examples where CS has been applied to solve problems for social good.
+
+Prof. Abhiram's lecture: You should be able to apply simple scientific thinking to analyze daily life situations
+
+Prof. Shivaram's lecture: You must have a basic overview of what is AI/ML, what is it so popular now, what are the broad areas and their applications.
+
+Prof. Ganesh's lecture: You should understand what is linear regression at a high level, and what is it used for. You are not expected to learn python or numpy but the material shared by him can be used as a reference for optional learning in case you are interested.
+
+Prof. Pushpak's lecture: You should have a high-level understanding of what is natural language processing, why is it a hard problem, and what are its applications in daily life. You should have a high level overview of the techniques involved, e.g., how we use large amount of data to learn probabilities, though you are not expected to understand any of the math.
+
+Prof. Swaprava's lecture: understanding the concept of two player games and equilibrium notions: dominant strategy equilibrium and pure strategy Nash equilibrium.
+
+Prof. Uday's lecture: understanding the concept of compilers from the first few slides. The rest of the topics covered in class are optional.
+
+Prof. Varsha's lecture: everything taught in class and on the slides, including the videos to watch on your own.
+
+Prof. Umesh's lecture: understanding the concept of cloud computing, and the various models of cloud computing (infrastructure as a service, software as a service etc.). Rest of the details covered in class are optional.
+
+Prof. Biswa's lecture: everything taught in the class and in the slides.
+
+Prof. Akash and Prof. Sujoy's lecture: the concept of algorithms, and what it means to be an efficient algorithm. High level understanding of concepts like Voronoi diagrams, visibility graph, and convex hull, and real life problems which can be solved by such algorithms. Understanding the mathematical notation is not expected.
+
+Prof. Akshay's lecture: high level understanding of how you can automatically verify the correctness of programs (you will not be expected to come up with any proofs of correctness), the concept of a loop invariant and variant, high level understanding of the second half of the lecture on computability.
+
+Prof. Ashutosh's lecture: understanding the concept of computationally easy vs hard vs impossible problems, understanding the graph coloring problem and its modeling for the solver at a high level.
+
+Prof. Manoj's lecture: high level understanding of the concepts discussed in class.

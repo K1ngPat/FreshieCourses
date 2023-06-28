@@ -1,0 +1,35 @@
+All,
+
+We will not have any classes this week. We will resume the second half of the course from Dec 26 in the form of guest lectures from CSE faculty. The brief introduction to modern computing that we covered earlier will get elaborated in detail by several faculty. Below is a tentative schedule for your reference. 
+
+We will also schedule a session for you to see your midsem answer sheets next week, after we finish grading them. I'll also put out the question paper and solutions at that time. You will also here from the TAs soon about scheduling presentations for homework 1.
+
+Here is the schedule, for your information.
+
+Lecture Slot	Stream	Instructor	Topic
+Dec 26 (Mon) 11:30am	Computing for society	Milind	How does science reach people
+Dec 27 (Tue) 8:30 am		Milind	
+Engineering and Development and the Role of the University.
+Dec 29 (Thu) 9:30 am		Milind	Jobs, Consumption and Sustainability.
+Jan 2 (Mon) 11:30am		Om	IT Applications for development needs
+Jan 3 (Tue) 8:30 am		Om	IT Applications for development needs
+Jan 5 (Thu) 9:30 am	AI/ML	Shivaram	History of AI
+Jan 9 (Mon) 11:30am		Ganesh	
+ML Basics through Data stories and programs
+Jan 10 (Tue) 8:30 am		Pushpak	Language and computation
+Jan 12 (Thu) 9:30 am		Swaprava	Multi-agent AI
+Jan 16 (Mon) 11:30am	Systems	Uday	Compilers + History of IT in India
+Jan 17 (Tue) 8:30 am		Varsha	Computer networking
+Jan 19 (Thu) 9:30 am		Umesh/Vinay	Cloud computing
+Jan 23 (Mon) 11:30am		Biswa	
+Happy 50th Birthday to the Microprocesor
+Jan 24 (Tue) 8:30 am	Theory	Rohit/Sujoy	
+Algorithms: from ancient to modern times
+Jan 26 (Thu) 9:30 am	Republic day Holiday		
+Jan 30 (Mon) 11:30am		Akshay	
+Role of Boolean Logic, Computability, and Turing Machines
+Jan 31 (Tue) 8:30 am		Ashutosh	
+Solving computationally hard problems
+Feb 2 (Thu) 9:30 am		Manoj	Information security and cryptography
+(Last day of instruction: Feb 3)			
+
